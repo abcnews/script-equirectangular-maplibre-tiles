@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Directory for source files
+SRC_DIR="./src"
+mkdir -p "$SRC_DIR"
+
+BASE_URL="https://assets.science.nasa.gov/content/dam/science/esd/eo/images/bmng/bmng-topography-bathymetry/january"
+TILES=("A1" "B1" "C1" "D1" "A2" "B2" "C2" "D2")
+
+echo "--- Downloading Blue Marble 500m GeoTIFF Tiles ---"
+
+for TILE in "${TILES[@]}"; do
+    FILE="world.topo.bathy.200401.3x21600x21600.${TILE}_geo.tif"
+    URL="${BASE_URL}/${FILE}"
+    
+    echo "Downloading ${FILE}..."
+    wget --continue "$URL" -P "$SRC_DIR"
+done
+
+echo "--- All downloads completed in $SRC_DIR ---"

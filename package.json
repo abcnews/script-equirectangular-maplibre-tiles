@@ -1,0 +1,26 @@
+{
+  "name": "script-equirectangular-maplibre-tiles",
+  "version": "1.0.0",
+  "description": "A automated utility to convert high-resolution equirectangular images (Plate Carrée) into Web Mercator slippy map tiles (XYZ format). This is ideal for creating custom map layers for MapLibre GL JS, Leaflet, or OpenLayers.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abcnews/script-equirectangular-maplibre-tiles.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abcnews/script-equirectangular-maplibre-tiles/issues"
+  },
+  "homepage": "https://github.com/abcnews/script-equirectangular-maplibre-tiles#readme",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.981.0",
+    "async": "^3.2.6",
+    "mime-types": "^3.0.2"
+  }
+}

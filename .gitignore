@@ -1,2 +1,7 @@
 tiles
 world.topo.bathy.200401.3x21600x10800_geo.tif
+src
+temp_mercator.tif
+upload.js
+merged_source.vrt
+node_modules
